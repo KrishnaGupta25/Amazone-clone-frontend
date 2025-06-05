@@ -1,0 +1,192 @@
+
+/* abb ham navbar ko kuch kuch properties denge */
+*{
+    margin: 0; /*by default sare margins ko zero set kardenge */
+    font-family: Arial;
+    border: border-box; /* acha tareeka of measuring space */
+}
+.navbar{
+    height: 60px;  /* becoz navbar ki height 60 px given  hai  */
+    background-color: #0f1111;
+    color: white; /* text ka color white  */
+    display: flex;/*all things will come in same line */
+    align-items: center; /*items centre ki taraf aliign ho jayenge*/
+    justify-content: space-evenly;/*sab box navbar ke evenly distribute ho jayee*/
+}
+.nav-logo{
+    height: 50px; /* you can go and check by inspecting on official website of amazonn  */
+    width: 100px; 
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px; 
+    width: 100px;
+}
+.border{
+    border: 1.5px solid transparent; /*ye  karne sai */
+}                                   /* jab um hover karenge tabbhi border  aa  */
+.border:hover{                        /* jayega */
+    border: 1.5px solid white;
+}
+.add-fir{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px; /* deliver to icon ke baad sai start ho rha hai */
+}
+.add-sec{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex; /* icon and india same line mai aa jayenge */
+    align-items: center;
+}
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;/*evenly distribute ho jayee*/
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center; /* becoz All is written in centre */
+    border-top-left-radius: 4px; /* becoz hme sirf top left ko round karna hai pure ko nhi */
+    border-bottom-left-radius: 4px; /* becoz hme sirf bottom left ko round karna hai pure ko nhi */
+    border: none; /* by default border hat jayega */
+}
+.search-input{
+    width: 100%; /* jo bhi khali area hai wo search wale ko hi mil jaye */
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px; 
+    border-bottom-right-radius: 4px; 
+    color: #0f1111;
+}
+.nav-search:hover{
+    border: 2px solid rgb(239, 159, 10); /* hover krne par orange  boundry aaye  gi */
+}
+span{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.nav-cart i{ /* navcart class kai icon par styling apply karni hai sirf */
+    font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.panel{
+    height: 40px;/* inspect karke check kar lo */
+    background-color: #222f3d;
+    display: flex; /* same line mai aa jayenge */
+    color: white;
+    align-items: center;/* center mai aa jayenge */
+    justify-content: space-evenly; /* horizontally evenly distribute ho gaya  */
+}
+.panel-ops p{ /* jitne bhi paragraph tags panel-ops mai hai */
+    display: inline;
+    margin-left: 15px; /* space aa jaye options ke beech */
+}
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+    
+}
+.hero-section{
+    background-image: url("hero_image.jpg");
+    height: 350px;
+    background-size: cover;
+    display: flex; /* 1 */
+    justify-content: center; /* 3 */
+    align-items: flex-end; /* 4 */
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;                           /* 1,2,3,4,5 for that white line on image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 90%; /* 2 */
+    margin-bottom: 25px; /* 5 */
+}
+.hero-msg a{
+    color: #007185;
+}
+.shop-section{
+    display: flex;
+    flex-wrap: wrap; /* ek line mai 4 box hi aaye  */
+    justify-content: space-evenly;/* 1 */
+    background-color: #e2e7e6;
+}                                              /* 1,2 to have space between boxes and also same space  */
+.box{
+    /* border: 2px solid black;  kynki sirf samajhne ke liye border banai thi */ 
+    height: 400px;
+    width: 23%;/* 2 */
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p{
+    color: #007185;
+}
+footer{ /* footer ko upar sai margin de rhe hain */ 
+    margin-top: 15px;
+}
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px; /*  upar sai margin de rhe hain */ 
+}
+ul a{
+    display: block; /* same vertical row mai aa jayenge */ 
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
